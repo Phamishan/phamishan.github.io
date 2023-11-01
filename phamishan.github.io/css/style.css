@@ -1,8 +1,7 @@
-html {
-  background-image: url(../assets/background.jpg);
+body {
+  background-image: url(../assets/background-blur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #021826;
 }
 
 * {
@@ -58,4 +57,25 @@ header {
   bottom: 150px;
   opacity: 0;
   transition: ease-in-out 0.5s;
+}
+
+.listStyle {
+  margin-left: -15px;
+  list-style-type: square;
+}
+
+td:nth-of-type(1) {
+  padding-right: 10px;
+} 
+
+.image-box {
+  height: 250px;
+  width: 250px;
+  transition: all 0.7s ease;
+  display: grid;
+  place-items: center;
+}
+
+.image-box:hover {
+  transform: scale(1.2);
 }
