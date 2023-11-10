@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css" rel="stylesheet"
+        integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M=" crossorigin="anonymous">
+    <script language="JavaScript" type="text/javascript" src="../javascript/bootstrap.bundle.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../javascript/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/534fa3229b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/phamishan_logo_black.ico">
+    <title>VALORANT TRACKER</title>
+</head>
+
+<body style="background-color:#09161f">
+    <div class="page-wrapper with-navbar">
+        <nav class="navbar navbar-expand-lg bg-gradient bg-body mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/phamishan_logo_full_black.png" width="auto" height="24"
+                        class="mb-2 mr-5 mr-sm-10 ps-2">
+                </a>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="example-modal-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-title-2"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover" id="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Dato</th>
+                                    <th scope="col">Mode</th>
+                                    <th scope="col">Map</th>
+                                    <th scope="col">Agent</th>
+                                    <th scope="col" class="text-end">Resultat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-primary" id="trackerggBtn">Tracker.gg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper ms-3 me-3">
+        <div class="container-fluid" id="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Indtast RIOT#ID:</h5>
+                            <form class="row">
+                                <div class="col-xl-9 pt-3">
+                                    <input type="text" class="form-control" id="requestedPlayer" required
+                                        placeholder="Fx. PH4M1#YIN" onkeyup="checkForInput()" list="datalist-options">
+                                    <datalist id="datalist-options">
+                                        <option value="PH4M1#YIN">
+                                        <option value="Eros#YANG">
+                                        <option value="RubGoose#EUNE">
+                                    </datalist>
+                                </div>
+                                <div class="col-xl-3 pt-3">
+                                    <button type="button" class="btn btn-primary w-100" onclick="searchForPlayer()"
+                                        id="searchBtn" disabled><i
+                                            class="fa-solid fa-magnifying-glass fa-bounce"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="row">
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="../javascript/scriptsCreatedByMe/valorantTrackerScript.js"></script>
+</body>
+
+</html>
