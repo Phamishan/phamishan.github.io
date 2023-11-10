@@ -11,3 +11,5 @@
     * Added PhamiBot project
     * Added Phamishan.dk project
     * Design optimizations
+* 1.3.0
+    * Added Phamishan.dk/valorantTracker project
