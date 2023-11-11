@@ -120,8 +120,6 @@ async function searchForPlayer() {
           const td5 = document.createElement("td");
           td5.className = "text-end";
 
-          console.log(resForMatches.data[i].players.all_players[j].team);
-
           if (resForMatches.data[i].players.all_players[j].team == "Blue" && resForMatches.data[i].teams.blue.has_won == false) {
             td5.innerHTML = `${resForMatches.data[i].teams.blue.rounds_won} - ${resForMatches.data[i].teams.blue.rounds_lost}&#128557`;
             tr.appendChild(td5);
@@ -144,8 +142,6 @@ async function searchForPlayer() {
         }
       }
     }
-
-    console.log(resForMatches);
   } else {
     document.getElementById("row").remove();
     const container = document.getElementById("container");
